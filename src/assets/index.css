@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #ff6347;
+    --primary-hover: #e5533d;
+    --text-light: #f0f0f0;
+    --text-dark: #ffffff;
+    --bg-dark: #121212;
+    --bg-card: #1f1f1f;
+    --bg-card-hover: #2a2a2a;
+    --text-muted: #cccccc;
+  }
+  
+  body {
+    @apply font-sans bg-[var(--bg-dark)] text-[var(--text-dark)];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--primary)] text-white py-2 px-5 rounded-full transition-all duration-300 
+           hover:bg-[var(--primary-hover)] hover:-translate-y-0.5 inline-block;
+  }
+  
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold mb-8 text-[var(--primary)] text-center;
+  }
+  
+  .card {
+    @apply bg-[var(--bg-card)] rounded-xl overflow-hidden transition-all duration-300
+           hover:-translate-y-1 hover:shadow-lg shadow-black/50;
+  }
+  
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6;
+  }
+}
