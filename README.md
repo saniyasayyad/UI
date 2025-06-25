@@ -9,18 +9,6 @@ BhaktDwaar is a devotional web application designed for pooja booking, Chadava o
 - JavaScript – Basic interactivity  
 - TypeScript – Type-safe scripting  
 
-📁 Project Structure
-
-bhaktdwaar/  
-├── index.html  
-├── styles/  
-│   └── style.css  
-├── scripts/  
-│   ├── main.ts  
-│   └── main.js (compiled)  
-├── assets/  
-│   └── images/  
-└── README.md  
 
 🚀 How to Run
 
